@@ -141,7 +141,7 @@ ul li {
 	float: left;
 }
 #header.fixed {
-	background-color: #201f22;
+	background-color: #404040;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
@@ -318,6 +318,25 @@ ul li {
 .banner {
 	background-color: #1d1d1d;
 	min-height: 750px;
+
+	background-image:url('../images/header_bg.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+.banner-overlay {
+		background-color: rgba(60, 60, 60, 0.9);
+		height: 100%;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
 }
 .banner-text {
 	padding-top: 35%;
@@ -656,9 +675,9 @@ ul li {
 	Footer
 -------------------------------------------------------------------------------*/
 .footer {
-	padding: 20px 0;
+	padding: 40px 0;
 	text-align: center;
-	background-color:#201f22;
+	background-color:#404040;
 }
 .footer p {
 	font-family: "Roboto", sans-serif;
