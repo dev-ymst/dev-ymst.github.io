@@ -1,0 +1,173 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bass Log - ブラックバス釣果管理データベース</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet" href="css/main-owm.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/line-icon.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section class="banner" role="banner">
+
+  <!-- banner text section-->
+  <div id="banner" class="container">
+    <div class="banner-overlay"></div>
+    <div class="col-md-8 col-md-offset-2 col-sm-12">
+      <div class="banner-text">
+        <h1><img src="images/app-icon/appicon.png" height="100">   <span>Bass Log</span></h1>
+        <h2>OpenWeatherMap 無料APIキー取得方法</h2>
+      </div>
+    </div>
+  </div>
+  <!-- banner text section-->
+
+</section>
+
+<!-- feature Capture -->
+<section id="features" class="section features1">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2 class="section-title">Bass LogアプリでOpenWeatherMapの気象データを自動取得</h2>
+        <p class="section-intro">OpenWeatherMapは現在の気象データを無償で提供するオンラインサービスです。<br>
+                                 Bass LogアプリではこのOpenWeatherMapから現在地の気象データ取得し、釣果データの天候、気温、風向き、風の強さとして利用することができます。<br>
+                                 気象データは自動的に取得するため、これらのデータを入力する手間が省けます。<br>
+                                 OpenWeatherMapの気象データを利用するためには、下記の手順にしたがってユーザー登録し、APIキーを取得する必要があります。</p>
+    </div>
+  </div>
+</section>
+<!-- feature Capture --> 
+
+<!-- feature Capture -->
+<section id="features" class="section features2">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step"><a href="https://openweathermap.org/">1. OpenWeatherMapページ</a>の上部のメニューで Sign in をクリックする。</h4>
+        <img class="img-responsive" src="owm/root.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">2. 新規にユーザー登録するために Create an Account をクリックする。</h4>
+        <img class="img-responsive" src="owm/sign-in.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">3. 上から名前、メールアドレス、パスワード(2回)を入力します。また16歳以上であること、規約の内容を確認して2箇所にチェックを入れる。</h4>
+        <img class="img-responsive" src="owm/create_new_account_1.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">4. 下にスクロールし、ロボットではないことを確認しチェックを入れ、最後に Create Account ボタンをクリックする。</h4>
+        <img class="img-responsive" src="owm/create_new_account_2.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">5. Company は空欄のままで、Purpose の欄で適当な目的(Othersでも良い)を選択し、Save ボタンをクリックする。</h4>
+        <img class="img-responsive" src="owm/create_new_account_3.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">5. Company は空欄のままで、Purpose の欄で適当な目的(Othersでも良い)を選択し、Save ボタンをクリックする。</h4>
+        <img class="img-responsive" src="owm/create_new_account_3.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">6. 上記3で入力したメールアドレスにOpenWeatherMapからメールが届くのでメール内の Verify your email ボタンをクリックする。</h4>
+        <img class="img-responsive" src="owm/mail.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">7. 登録が完了したことを示す下記のようなページに移動するので、API keys のメニューをクリックする。</h4>
+        <img class="img-responsive" src="owm/confirmed.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">8. 下記のようにAPI Keyが表示される。</h4>
+        <img class="img-responsive" src="owm/apikey.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h4 class="section-step">9. 上記8で表示された API Key をBass Logアプリの設定画面に入力する。</h4>
+        <img class="img-responsive" src="owm/setting.png" width="480">
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- feature Capture --> 
+
+<!--privacy-policy section -->
+<section id="privacy-policy" class="section privacy-policy">
+
+  <div class="container">
+
+      <div class="col-md-8 col-md-offset-2">
+        <div class="privacy-policy-content">
+          <h2 class="section-title text-center">免責事項</h2>
+          <p>本サイトおよび本アプリにより生じたあらゆる損害に関して、開発者は一切の責任を負いません。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--privacy-policy section --> 
+
+
+<!-- footer section-->
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="col-md-12">
+      <p class="text-center">© dev-ymst</p>
+    </div>
+  </div>
+</footer>
+<!-- footer section--> 
+
+<!-- Include JS files --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/jquery.subscribe.js"></script> 
+<script src="js/jquery.contact.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
