@@ -460,13 +460,21 @@ ul li {
 .features3 img {
 	bottom: -100px;
 }
+.features3-content p {
+	font-family: "Roboto", sans-serif;
+	font-size:14px;
+	font-weight: 300;
+	line-height: 21px;
+	letter-spacing:1px;
+	margin-top:7%;
+}
 
 /* ------------------------------------------------------------------------------
 	Privacy-policy
 -------------------------------------------------------------------------------*/
 
 .privacy-policy {
-	background-color:#f2f2f2;
+	background-color:#ffffff;
 }
 .privacy-policy-content {
 	margin-top:10%;
