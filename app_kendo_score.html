@@ -1,0 +1,509 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ja"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kendo Score - 剣道スコア記録アプリ</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/owl.transitions.css">
+<link rel="stylesheet" href="css/main-kendo_score.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/line-icon.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section class="banner" role="banner">
+    <!-- header section -->
+    <header id="header">
+        <div class="header-content clearfix"> 
+            <!-- navigation section  -->
+            <nav class="navigation" role="navigation">
+                <ul class="primary-nav">
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="#subtitle_main">Features</a></li>
+                    <li><a href="#privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="nav-toggle">Menu<span></span></a>
+            <!-- navigation section  -->
+    </div>
+    </header>
+    <!-- header section -->
+
+    <!-- banner text section-->
+    <div id="banner" class="container">
+        <div class="banner-overlay"></div>
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
+            <div class="banner-text">
+                <h1><img src="kendo_score_images/app-icon/Icon-App-72x72@2x.png" height="100">   <span>Kendo Score</span></h1>
+                <h2>- 剣道スコア記録アプリ</h2>
+                <p>剣道の個人戦、団体戦、団体勝抜戦の試合のスコアを記録できるアプリです。<br>
+                   記録したスコアを印刷したりPDFデータとして共有することもできます。</p>
+                <div class="banner-btn"><a href="https://apps.apple.com/jp/app/bass-log/id1565927026?itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1621641600&h=73a9c0f573234ae0098cc06bcb94be42" alt="Download on the App Store" style="border-radius: 13px; width: 250px; height: 83px;"></a></div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <!-- banner text section-->
+</section>
+
+<!-- Subtitle main -->
+<section id="subtitle_main" class="section subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">メイン画面</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subtitle main -->
+
+<!-- feature main -->
+<section id="feature_main" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">試合一覧表示</h2>
+                    <p>今までの試合をまとめてを一覧で表示します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/add_new.png" height="30">：画面右下のプラスボタンを押すと新しい試合を追加するために「<a href="#feature_edit_game_data">試合設定画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 試合編集：試合リストの各項目をタップすると「<a href="#feature_individual_game">個人戦 スコア画面</a>」「<a href="#feature_team_game_list">団体戦 試合一覧画面</a>」「<a href="#feature_tournament_game_list">勝ち抜き戦画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 試合削除：試合リストを左にスワイプすることでその試合を削除できます。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/main.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature ResultList --> 
+
+<!-- feature edit game data -->
+<section id="feature_edit_game_data" class="section features3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="features2-content">
+                    <h2 class="section-title">試合設定画面</h2>
+                    <p>試合情報について設定する画面です。</p>
+                    <ul>
+                        <li><i class="fa fa-check"></i> 日付：試合の日付を設定</li>
+                        <li><i class="fa fa-check"></i> 大会名：大会名称を設定</li>
+                        <li><i class="fa fa-check"></i> 最終成績：試合終了後に優勝、準優勝等の成績を設定</li>
+                        <li><i class="fa fa-check"></i> 試合形式：個人戦・団体戦・団体勝抜戦から選択</li>
+                        <li><i class="fa fa-check"></i> 人数制(※個人戦以外)：3人・5人・7人から選択</li>
+                        <li><i class="fa fa-check"></i> チーム名：自身のチーム名を設定</li>
+                        <li><i class="fa fa-check"></i> 選手名：自身の選手名を設定</li>
+                        <li><i class="fa fa-check"></i> チームメンバー(※個人戦以外)：自分のチームメンバーを設定。</li>
+                        <li><i class="fa fa-check"></i> 練成会モード：ONの場合、2本勝ち決定後も継続してスコアを入力可能</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6"> 
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/edit_game_data.png" width="360"> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature edit game data --> 
+
+<!-- Subtitle individual -->
+<section id="subtitle_individual" class="section subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">個人戦</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subtitle individual -->
+
+<!-- feature individual game -->
+<section id="feature_individual_game" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">個人戦 スコア画面</h2>
+                    <p>個人戦の各試合のスコアを記録します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/add_new.png" height="30">：画面右下のプラスボタンを押すと新しい試合のスコアを追加し「<a href="#feature_individual_game_score">個人戦 スコア入力画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合編集：スコア項目をタップすると編集のために「<a href="#feature_individual_game_score">個人戦 スコア入力画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合削除：スコア項目を左にスワイプすることでその試合を削除できます。</p>
+                        <p><i class="fa fa-circle"></i> 編集：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から編集を選択すると、試合情報を編集するために「<a href="#feature_edit_game_data">試合設定画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 印刷：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から印刷を選択すると、表示中の試合を対象に「<a href="#feature_print_preview">印刷プレビュー画面</a>」に移動します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/individual_game.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature individual game --> 
+
+<!-- feature individual game score -->
+<section id="feature_individual_game_score" class="section features3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:left;">
+                <div class="features3-content">
+                    <h2 class="section-title">個人戦 スコア入力画面</h2>
+                    <p>個人戦のスコアを入力します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> 試合タイトル：その試合のタイトル(一回戦や準決書、決勝など)を設定</p>
+                        <p><i class="fa fa-circle"></i> 自分のチーム名：自分のチーム名を設定します。初期値は「<a href="#feature_edit_game_data">試合設定画面</a>」で設定したチーム名になります。</p>
+                        <p><i class="fa fa-circle"></i> 自分の選手名：自分の選手名を設定します。初期値は「<a href="#feature_edit_game_data">試合設定画面</a>」で設定した選手名になります。</p>
+                        <p><i class="fa fa-circle"></i> 相手のチーム名：相手のチーム名を設定します。</p>
+                        <p><i class="fa fa-circle"></i> 相手の選手名：相手の選手名を設定します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_men.png" height="30"><img src="kendo_score_images/score_kote.png" height="30"><img src="kendo_score_images/score_dou.png" height="30"><img src="kendo_score_images/score_tsuki.png" height="30">：有効打突を入力</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_circle.png" height="30">：不戦勝の場合は<img src="kendo_score_images/score_circle.png" height="30">を2つ入力します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_foul.png" height="30">：反則を入力。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_win_by_judge.png" height="30">：判定勝ちの場合に選択します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_undo.png" height="30">：一つ前に入力した有効打突等を消去</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_redo.png" height="30">：上記で消去した有効打突等を再入力</p>
+                        <p><i class="fa fa-circle"></i> キャンセル：入力をすべてキャンセルし画面を閉じる</p>
+                        <p><i class="fa fa-circle"></i> 決定：試合終了として画面を閉じる</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/individual_game_score.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature individual game score --> 
+
+<!-- Subtitle team -->
+<section id="subtitle_team" class="section subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">団体戦</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subtitle team -->
+
+<!-- feature team game list -->
+<section id="feature_team_game_list" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">団体戦 試合一覧画面</h2>
+                    <p>団体戦の各試合を一覧表示します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/add_new.png" height="30">：画面右下のプラスボタンを押すと新しい試合を追加するために「<a href="#feature_edit_team_game">団体戦 試合設定画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 試合編集：試合項目をタップすると編集のために「<a href="#feature_team_game">団体戦 スコア画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合削除：試合項目を左にスワイプすることでその試合を削除できます。</p>
+                        <p><i class="fa fa-circle"></i> 編集：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から編集を選択すると、試合情報を編集するために「<a href="#feature_edit_game_data">試合設定画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 印刷：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から印刷を選択すると、表示中の試合を対象に「<a href="#feature_print_preview">印刷プレビュー画面</a>」に移動します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/team_game_list.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature team game list --> 
+
+<!-- feature edit team game -->
+<section id="feature_edit_team_game" class="section features3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:left;">
+                <div class="features2-content">
+                    <h2 class="section-title">団体戦 試合設定画面</h2>
+                    <p>団体戦の試合情報について設定する画面です。</p>
+                    <ul>
+                        <li><i class="fa fa-circle"></i> 試合タイトル：その試合のタイトル(一回戦や準決書、決勝など)を設定</li>
+                        <li><i class="fa fa-circle"></i> 自分のチーム名：自身のチーム名を設定します。初期値は「<a href="#feature_edit_game_data">試合設定画面</a>」で設定したチーム名になります。</li>
+                        <li><i class="fa fa-circle"></i> 自分の選手オーダー：自身の選手オーダーを設定します。初期値は「<a href="#feature_edit_game_data">試合設定画面</a>」で設定した選手オーダーになります。</li>
+                        <li><i class="fa fa-circle"></i> 相手のチーム名：相手のチーム名を設定します。</li>
+                        <li><i class="fa fa-circle"></i> 相手の選手オーダー：相手の選手オーダーを設定します。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6"> 
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/edit_team_game.png" width="360"> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature edit team game --> 
+
+<!-- feature team game -->
+<section id="feature_team_game" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">団体戦 スコア画面</h2>
+                    <p>団体戦の各試合のスコアを記録します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/add_new.png" height="30">：画面右下のプラスボタンを押すと新しい試合のスコアを追加し「<a href="#feature_team_game_score">団体戦 スコア入力画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合編集：スコア項目をタップすると編集のために「<a href="#feature_team_game_score">団体戦 スコア入力画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合削除：スコア項目を左にスワイプすることでその試合を削除できます。</p>
+                        <p><i class="fa fa-circle"></i> 編集：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から編集を選択すると、試合情報を編集するために「<a href="#feature_edit_team_game">団体戦 試合設定画面</a>」に移動します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/team_game.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature team game --> 
+
+<!-- feature team game score -->
+<section id="feature_team_game_score" class="section features3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:left;">
+                <div class="features3-content">
+                    <h2 class="section-title">団体戦 スコア入力画面</h2>
+                    <p>団体戦のスコアを入力します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> 自分の選手名：自分の選手名を設定します。初期値は「<a href="#feature_edit_team_game">団体戦 試合設定画面</a>」で設定した選手名になります。</p>
+                        <p><i class="fa fa-circle"></i> 相手の選手名：相手の選手名を設定します。初期値は「<a href="#feature_edit_team_game">団体戦 試合設定画面</a>」で設定した選手名になります。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_men.png" height="30"><img src="kendo_score_images/score_kote.png" height="30"><img src="kendo_score_images/score_dou.png" height="30"><img src="kendo_score_images/score_tsuki.png" height="30">：有効打突を入力</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_circle.png" height="30">：不戦勝の場合は<img src="kendo_score_images/score_circle.png" height="30">を2つ入力します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_foul.png" height="30">：反則を入力。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_win_by_judge.png" height="30">：判定勝ちの場合に選択します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_undo.png" height="30">：一つ前に入力した有効打突等を消去</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_redo.png" height="30">：上記で消去した有効打突等を再入力</p>
+                        <p><i class="fa fa-circle"></i> キャンセル：入力をすべてキャンセルし画面を閉じる</p>
+                        <p><i class="fa fa-circle"></i> 決定：試合終了として画面を閉じる</p>
+                        <p></p>
+                        <p><i class="fa fa-asterisk"></i> 両チームの選手が不参加で不戦とする場合は何も入力せず決定を押し引き分けとしてください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/team_game_score.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature team game score --> 
+    
+<!-- Subtitle tournament -->
+<section id="subtitle_tournament" class="section subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">団体勝抜戦</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subtitle tournament -->
+
+<!-- feature tournament game list -->
+<section id="feature_tournament_game_list" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">団体勝抜戦 試合一覧画面</h2>
+                    <p>団体勝抜戦の各試合を一覧表示します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/add_new.png" height="30">：画面右下のプラスボタンを押すと新しい試合を追加するために「<a href="#feature_edit_tournament_game">団体勝抜戦 試合設定画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 試合編集：試合項目をタップすると編集のために「<a href="#feature_tournament_game">団体勝抜戦 スコア画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合削除：試合項目を左にスワイプすることでその試合を削除できます。</p>
+                        <p><i class="fa fa-circle"></i> 編集：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から編集を選択すると、試合情報を編集するために「<a href="#feature_edit_game_data">試合設定画面</a>」に移動します。</p>
+                        <p><i class="fa fa-circle"></i> 印刷：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から印刷を選択すると、表示中の試合を対象に「<a href="#feature_print_preview">印刷プレビュー画面</a>」に移動します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/tournament_game_list.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature tournament game list --> 
+
+<!-- feature edit tournament game -->
+<section id="feature_edit_tournament_game" class="section features3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:left;">
+                <div class="features2-content">
+                    <h2 class="section-title">団体勝抜戦 試合設定画面</h2>
+                    <p>団体勝抜戦の試合情報について設定する画面です。</p>
+                    <ul>
+                        <li><i class="fa fa-circle"></i> 試合タイトル：その試合のタイトル(一回戦や準決書、決勝など)を設定</li>
+                        <li><i class="fa fa-circle"></i> 自分のチーム名：自身のチーム名を設定します。初期値は「<a href="#feature_edit_game_data">試合設定画面</a>」で設定したチーム名になります。</li>
+                        <li><i class="fa fa-circle"></i> 自分の選手オーダー：自身の選手オーダーを設定します。初期値は「<a href="#feature_edit_game_data">試合設定画面</a>」で設定した選手オーダーになります。</li>
+                        <li><i class="fa fa-circle"></i> 相手のチーム名：相手のチーム名を設定します。</li>
+                        <li><i class="fa fa-circle"></i> 相手の選手オーダー：相手の選手オーダーを設定します。</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6"> 
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/edit_tournament_game.png" width="360"> 
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature edit game data --> 
+
+<!-- feature tournament game -->
+<section id="feature_tournament_game" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">団体勝抜戦 スコア画面</h2>
+                    <p>団体勝抜戦の各試合のスコアを記録します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/add_new.png" height="30">：画面右下のプラスボタンを押すと新しい試合のスコアを追加し「<a href="#feature_tournament_game_score">団体勝抜戦 スコア入力画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合編集：スコア項目をタップすると編集のために「<a href="#feature_tournament_game_score">団体勝抜戦 スコア入力画面</a>」を表示します。</p>
+                        <p><i class="fa fa-circle"></i> 試合削除：スコア項目を左にスワイプすることでその試合を削除できます。</p>
+                        <p><i class="fa fa-circle"></i> 編集：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から編集を選択すると、試合情報を編集するために「<a href="#feature_edit_tournament_game">団体勝抜戦 試合設定画面</a>」に移動します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/tournament_game.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature tournament game --> 
+
+<!-- feature tournament game score -->
+<section id="feature_tournament_game_score" class="section features3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:left;">
+                <div class="features3-content">
+                    <h2 class="section-title">団体勝抜戦 スコア入力画面</h2>
+                    <p>団体勝抜戦のスコアを入力します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> 自分の選手名：自分の選手名を設定します。初期値は「<a href="#feature_edit_tournament_game">団体勝抜戦 試合設定画面</a>」で設定した選手名になります。</p>
+                        <p><i class="fa fa-circle"></i> 相手の選手名：相手の選手名を設定します。初期値は「<a href="#feature_edit_tournament_game">団体勝抜戦 試合設定画面</a>」で設定した選手名になります。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_men.png" height="30"><img src="kendo_score_images/score_kote.png" height="30"><img src="kendo_score_images/score_dou.png" height="30"><img src="kendo_score_images/score_tsuki.png" height="30">：有効打突を入力</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_circle.png" height="30">：不戦勝の場合は<img src="kendo_score_images/score_circle.png" height="30">を2つ入力します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_foul.png" height="30">：反則を入力。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_win_by_judge.png" height="30">：判定勝ちの場合に選択します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_undo.png" height="30">：一つ前に入力した有効打突等を消去</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/score_redo.png" height="30">：上記で消去した有効打突等を再入力</p>
+                        <p><i class="fa fa-circle"></i> キャンセル：入力をすべてキャンセルし画面を閉じる</p>
+                        <p><i class="fa fa-circle"></i> 決定：試合終了として画面を閉じる</p>
+                        <p></p>
+                        <p><i class="fa fa-asterisk"></i> 引き分けの場合、両チームの選手共に抜け次の選手に移ります。ただし片方のチームの選手が大将の場合、そのチームは引き分けにより敗戦となります。両方の選手が大将の場合は勝負が決するまで試合を延長するものとします。</p>
+                        <p><i class="fa fa-asterisk"></i> 両チームの選手が不参加で不戦とする場合は何も入力せず決定を押し引き分けとしてください。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/tournament_game_score.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature tournament game score --> 
+
+<!-- Subtitle print -->
+<section id="subtitle_print" class="section subtitle">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-title">印刷</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Subtitle print -->
+
+<!-- feature print preview -->
+<section id="feature_print_preview" class="section features2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="float:right;">
+                <div class="features2-content">
+                    <h2 class="section-title">印刷プレビュー画面</h2>
+                    <p>各試合の印刷プレビューを表示します。</p>
+                    <div class="text-left">
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/print_print.png" height="30">：印刷を実行します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/print_share.png" height="30">：PDFファイルを様々なアプリに共有します。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive" src="kendo_score_images/app-screen/6.5/print_preview.png" width="360">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature print preview --> 
+
+<!--privacy-policy section -->
+<section id="privacy-policy" class="section privacy-policy">
+
+  <div class="container">
+
+      <div class="col-md-8 col-md-offset-2">
+        <div class="privacy-policy-content">
+          <h2 class="section-title text-center">免責事項</h2>
+          <p>本サイトおよび本アプリにより生じたあらゆる損害に関して、開発者は一切の責任を負いません。</p>
+        </div>
+        <div class="privacy-policy-content">
+          <h2 class="section-title text-center">プライバシーポリシー</h2>
+          <p>第三者に個人を特定できる情報を提供することはありません。個人情報の管理には細心の注意を払い、以下に掲げた通りに扱います。</p>
+          <p>アプリの利便性向上のため、匿名で、個人を特定できない範囲に細心の注意を払い、アクセス解析をしております。例えば、アプリがクラッシュした時、どの部分でクラッシュしたかを匿名で送信し、バグの素早い修正に役立たせております。</p>
+          <p>また、デバイスやアプリバージョンの使用率、特定の機能の使用率などを解析し、アプリの改善に役立てています。</p>
+          <p>作成日：2022/10/04</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--privacy-policy section --> 
+
+<!-- footer section-->
+<footer class="section footer">
+  <div class="footer-bottom">
+    <div class="col-md-12">
+      <p class="text-center">© dev-ymst</p>
+    </div>
+  </div>
+</footer>
+<!-- footer section--> 
+
+<!-- Include JS files --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/jquery.subscribe.js"></script> 
+<script src="js/jquery.contact.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
