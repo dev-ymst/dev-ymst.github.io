@@ -107,7 +107,7 @@
                         <li><i class="fa fa-check"></i> 試合形式：個人戦・団体戦・団体勝抜戦から選択</li>
                         <li><i class="fa fa-check"></i> 人数制(※個人戦以外)：3人・5人・7人から選択</li>
                         <li><i class="fa fa-check"></i> チーム名：自身のチーム名を設定</li>
-                        <li><i class="fa fa-check"></i> 選手名：自身の選手名を設定</li>
+                        <li><i class="fa fa-check"></i> 選手名(※個人戦のみ)：自身の選手名を設定</li>
                         <li><i class="fa fa-check"></i> チームメンバー(※個人戦以外)：自分のチームメンバーを設定。</li>
                         <li><i class="fa fa-check"></i> 練成会モード：ONの場合、2本勝ち決定後も継続してスコアを入力可能</li>
                     </ul>
@@ -303,7 +303,7 @@
                         <p><i class="fa fa-circle"></i> キャンセル：入力をすべてキャンセルし画面を閉じる</p>
                         <p><i class="fa fa-circle"></i> 決定：試合終了として画面を閉じる</p>
                         <p></p>
-                        <p><i class="fa fa-asterisk"></i> 両チームの選手が不参加で不戦とする場合は何も入力せず決定を押し引き分けとしてください。</p>
+                        <p>※両チームの選手が不参加で不戦とする場合は何も入力せず決定を押し引き分けとしてください。</p>
                     </div>
                     <p></p>
                 </div>
@@ -393,6 +393,8 @@
                         <p><i class="fa fa-circle"></i> 試合編集：スコア項目をタップすると編集のために「<a href="#feature_tournament_game_score">団体勝抜戦 スコア入力画面</a>」を表示します。</p>
                         <p><i class="fa fa-circle"></i> 試合削除：スコア項目を左にスワイプすることでその試合を削除できます。</p>
                         <p><i class="fa fa-circle"></i> 編集：右上のメニュー<img src="kendo_score_images/menu_dots.png" height="30">から編集を選択すると、試合情報を編集するために「<a href="#feature_edit_tournament_game">団体勝抜戦 試合設定画面</a>」に移動します。</p>
+                        <p></p>
+                        <p>※引き分けの場合、両チームの選手共に抜け次の選手に移ります。ただし片方のチームの選手が大将の場合、そのチームは引き分けにより敗戦となります。両方の選手が大将の場合は勝負が決するまで試合を延長するものとします。</p>
                     </div>
                     <p></p>
                 </div>
@@ -425,8 +427,8 @@
                         <p><i class="fa fa-circle"></i> キャンセル：入力をすべてキャンセルし画面を閉じる</p>
                         <p><i class="fa fa-circle"></i> 決定：試合終了として画面を閉じる</p>
                         <p></p>
-                        <p><i class="fa fa-asterisk"></i> 引き分けの場合、両チームの選手共に抜け次の選手に移ります。ただし片方のチームの選手が大将の場合、そのチームは引き分けにより敗戦となります。両方の選手が大将の場合は勝負が決するまで試合を延長するものとします。</p>
-                        <p><i class="fa fa-asterisk"></i> 両チームの選手が不参加で不戦とする場合は何も入力せず決定を押し引き分けとしてください。</p>
+                        <p>※引き分けの場合、両チームの選手共に抜け次の選手に移ります。ただし片方のチームの選手が大将の場合、そのチームは引き分けにより敗戦となります。両方の選手が大将の場合は勝負が決するまで試合を延長するものとします。</p>
+                        <p>※両チームの選手が不参加で不戦とする場合は何も入力せず決定を押し引き分けとしてください。</p>
                     </div>
                     <p></p>
                 </div>
@@ -460,8 +462,8 @@
                     <h2 class="section-title">印刷プレビュー画面</h2>
                     <p>各試合の印刷プレビューを表示します。</p>
                     <div class="text-left">
-                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/print_print.png" height="30">：印刷を実行します。</p>
-                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/print_share.png" height="30">：PDFファイルを様々なアプリに共有します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/print_print.png" height="30">：PDFファイルの印刷を実行します。</p>
+                        <p><i class="fa fa-circle"></i> <img src="kendo_score_images/print_share.png" height="30">：PDFファイルを様々なアプリと共有することができます。</p>
                     </div>
                     <p></p>
                 </div>
